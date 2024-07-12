@@ -4794,6 +4794,16 @@
 	)
 	(wire
 		(pts
+			(xy 21.59 57.15) (xy 31.75 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f1711ab5-833f-45db-bcc5-9b85df9ad18b")
+	)
+	(wire
+		(pts
 			(xy 247.65 91.44) (xy 241.3 91.44)
 		)
 		(stroke
@@ -7761,6 +7771,101 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:LED")
+		(at 138.43 92.71 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "58be8432-8990-46ce-84c1-fdbbf988d114")
+		(property "Reference" "D1"
+			(at 136.8425 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 136.8425 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
+			(at 138.43 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2008201032_Foshan-NationStar-Optoelectronics-NCD0805B2_C84259.pdf"
+			(at 138.43 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light Emitting Diode (LED)"
+			(at 138.43 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C84259"
+			(at 138.43 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" " Foshan NationStar Optoelectronics"
+			(at 138.43 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" " NCD0805B2"
+			(at 138.43 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cbe9b2f7-21a3-4aee-b92c-be3d0bb50a65")
+		)
+		(pin "2"
+			(uuid "2d3a8919-a05f-4250-8a1f-c74282c2b863")
+		)
+		(instances
+			(project "reflow-oven-pid-controller"
+				(path "/bdbc448a-b1e6-4e79-b3e0-159cac968736"
+					(reference "D1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector_Generic:Conn_01x04")
 		(at 91.44 87.63 180)
 		(unit 1)
@@ -7966,7 +8071,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/2404011708_DSTECH-DS8242-33SS3_C5884134.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2403191525_UMW-Youtai-Semiconductor-Co---Ltd--AMS1117-3-3_C347222.pdf"
 			(at 236.22 97.79 0)
 			(effects
 				(font
@@ -7983,7 +8088,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C5884134"
+		(property "LCSC" "C347222"
 			(at 233.68 91.44 0)
 			(effects
 				(font
@@ -7992,7 +8097,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "DSTECH"
+		(property "Manufacturer" "UMW(Youtai Semiconductor Co., Ltd.)"
 			(at 233.68 91.44 0)
 			(effects
 				(font
@@ -8001,7 +8106,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part Number" "DS8242-33SS3"
+		(property "Part Number" "AMS1117-3.3"
 			(at 233.68 91.44 0)
 			(effects
 				(font
@@ -8090,101 +8195,6 @@
 			(project "Controller"
 				(path "/bdbc448a-b1e6-4e79-b3e0-159cac968736"
 					(reference "#PWR05")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 138.43 92.71 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6871e3d4-3b99-4237-967c-67d5e97c69c0")
-		(property "Reference" "R2"
-			(at 138.43 86.36 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "330Ω"
-			(at 138.43 88.9 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 138.43 94.488 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/2205311830_UNI-ROYAL-Uniroyal-Elec-0805W8F3300T5E_C17630.pdf"
-			(at 138.43 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Thick Film Resistor"
-			(at 138.43 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C17630"
-			(at 138.43 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Number" "0805W8F3300T5E"
-			(at 138.43 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
-			(at 138.43 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "f6c498da-839f-4324-a448-bae7e1b87a48")
-		)
-		(pin "1"
-			(uuid "c3f4ecbd-2265-4f9f-80a0-d0e5c80a3946")
-		)
-		(instances
-			(project "Controller"
-				(path "/bdbc448a-b1e6-4e79-b3e0-159cac968736"
-					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -8482,6 +8492,73 @@
 			(project "Controller"
 				(path "/bdbc448a-b1e6-4e79-b3e0-159cac968736"
 					(reference "#PWR031")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 21.59 64.77 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "81483395-a52e-4c3e-bd2b-b3a368b6fc94")
+		(property "Reference" "#PWR033"
+			(at 21.59 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 21.59 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 21.59 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 21.59 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 21.59 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "22117c27-dcf3-481b-80fa-b7b443a20182")
+		)
+		(instances
+			(project "reflow-oven-pid-controller"
+				(path "/bdbc448a-b1e6-4e79-b3e0-159cac968736"
+					(reference "#PWR033")
 					(unit 1)
 				)
 			)
@@ -9350,101 +9427,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:LED")
-		(at 148.59 92.71 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a697a659-525f-492a-bd8d-20d4006c7feb")
-		(property "Reference" "D1"
-			(at 147.0025 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LED"
-			(at 147.0025 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
-			(at 148.59 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2008201032_Foshan-NationStar-Optoelectronics-NCD0805B2_C84259.pdf"
-			(at 148.59 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Light Emitting Diode (LED)"
-			(at 148.59 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C84259"
-			(at 148.59 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" " Foshan NationStar Optoelectronics"
-			(at 148.59 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part Number" " NCD0805B2"
-			(at 148.59 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0baa7bc8-b6f6-48b8-98f6-bf2ded5a8c14")
-		)
-		(pin "2"
-			(uuid "7a87d3bc-c1a2-4f71-a6ae-121aacf29721")
-		)
-		(instances
-			(project ""
-				(path "/bdbc448a-b1e6-4e79-b3e0-159cac968736"
-					(reference "D1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
 		(at 266.7 135.89 90)
 		(unit 1)
@@ -9677,6 +9659,101 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 148.59 92.71 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b1f2f05a-5159-4aeb-9c19-4620088fb4d8")
+		(property "Reference" "R2"
+			(at 148.59 86.36 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "470Ω"
+			(at 148.59 88.9 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 148.59 94.488 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010200_UNI-ROYAL-Uniroyal-Elec-0805W8F4700T5E_C17710.pdf"
+			(at 148.59 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Thick Film Resistor"
+			(at 148.59 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17710"
+			(at 148.59 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "0805W8F4700T5E "
+			(at 148.59 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+			(at 148.59 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "7556a1ce-5a01-4563-81e8-e7b743ba0f9a")
+		)
+		(pin "1"
+			(uuid "246b88e9-e41f-420a-8b58-bcd55f97288a")
+		)
+		(instances
+			(project "reflow-oven-pid-controller"
+				(path "/bdbc448a-b1e6-4e79-b3e0-159cac968736"
+					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector_Generic:Conn_02x05_Counter_Clockwise")
 		(at 97.79 44.45 0)
 		(unit 1)
@@ -9903,73 +9980,6 @@
 			(project "Controller"
 				(path "/bdbc448a-b1e6-4e79-b3e0-159cac968736"
 					(reference "#PWR08")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 31.75 57.15 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "bffa1e51-a682-4fb1-8e6c-45662ba13388")
-		(property "Reference" "#PWR025"
-			(at 25.4 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 26.67 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 31.75 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 31.75 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 31.75 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "69fb96bd-0ebf-4a9e-a2d7-2b3992234e85")
-		)
-		(instances
-			(project "Controller"
-				(path "/bdbc448a-b1e6-4e79-b3e0-159cac968736"
-					(reference "#PWR025")
 					(unit 1)
 				)
 			)
@@ -10591,6 +10601,102 @@
 			(project "Controller"
 				(path "/bdbc448a-b1e6-4e79-b3e0-159cac968736"
 					(reference "C3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 21.59 60.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e64fb1c7-631f-4fe4-94e0-58ef04d63b61")
+		(property "Reference" "C11"
+			(at 25.4 59.6899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 24.384 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 22.5552 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/1912300933_TORCH-C0805B104K500NT_C476766.pdf"
+			(at 21.59 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Multilayer Ceramic Capacitor"
+			(at 21.59 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C476766"
+			(at 21.59 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" " TORCH"
+			(at 21.59 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part Number" "C0805B104K500NT"
+			(at 21.59 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "ef3cd307-c897-494f-802a-e9a78c4df983")
+		)
+		(pin "1"
+			(uuid "f5ac31c0-612a-462c-92e7-871b2fc09400")
+		)
+		(instances
+			(project "reflow-oven-pid-controller"
+				(path "/bdbc448a-b1e6-4e79-b3e0-159cac968736"
+					(reference "C11")
 					(unit 1)
 				)
 			)
